@@ -1,5 +1,4 @@
-@import("https://fonts.googleapis.com/css?family=Poppins");
-
+@import url("https://fonts.googleapis.com/css?family=poppins:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
 
 * {
     margin: 0;
@@ -560,8 +559,7 @@ header .container .row .col-md-6 .port-info .header-sub-image img:hover{
     text-align: center;
     overflow: hidden;
     /* background-color: #141414; */
-
-  }
+}
 
 @media (max-width: 580px ) {
     .GrandParent {
@@ -633,20 +631,6 @@ header .container .row .col-md-6 .port-info .header-sub-image img:hover{
       }
 }
 
-
-
-/* .Nav li span {
-    position: absolute;
-    margin-top: -10px;
-  }
-
-.Nav span.active {
-    background: #fff;
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%; 
-  } */
   
   .Hamburger {
     height: 40px;
@@ -660,6 +644,11 @@ header .container .row .col-md-6 .port-info .header-sub-image img:hover{
       opacity: 0;
   }
 
+@media(max-width: 991px) {
+    .GrandParent {
+        display: none;
+    }
+}
 
   .block-3 .image {
     width: 100%;
@@ -729,18 +718,105 @@ header .container .row .col-md-6 .port-info .header-sub-image img:hover{
 
 }
 
+/*  */
 
-/* @media (max-width:991px){ */
+.btn:focus{
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: initial;
+}
+
+
+
+a:focus,
+.button:focus, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+/* Header  ----------------------------------------Section */
+.header_area {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: -20px;
+  z-index: 1000;
+}
+
+
+.main_menu .navbar {
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+
+.navbar-light .navbar-nav .nav-item .nav-link:after {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #754EF9;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child {
+  margin-right: 0px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.header_area .main_menu.sticky {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: -90px;
+  left: 0;
+  right: 0;
+  transform: translateY(70px);
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+  padding: 0;
+
+}
+
+.header_area .main_menu.sticky .main-menu {
+  padding: 0;
+}
+
+#sticky-header.sticky {
+    padding: 0;
+    padding-bottom: -0px;
+}
+
+@media (max-width:991px){
     .navbar-toggler {
         border: none;
         padding: 0px;
         cursor: pointer;
-        margin-top: 27px;
+        /* margin-top: 27px; */
         margin-bottom: 23px;
         position: relative;
-        left: 90%;
+        margin: 0 auto 20px auto;
     }
-	
+	.header_area .navbar {
+		background: transparent;
+	}
     .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
 		opacity: 1;
 	}
@@ -761,11 +837,61 @@ header .container .row .col-md-6 .port-info .header-sub-image img:hover{
 		display: block;
 		width: 25px;
 		height: 3px;
-		background: #F79960;
+		background: #fff;
 		margin: auto;
 		margin-bottom: 4px;
 		transition: all 400ms linear;
-        cursor: pointer;
-        border-radius: 50px;
+    cursor: pointer;
+    border-radius: 50px;
 	}
-/* } */
+    .navbar .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    .nav{
+        padding: 0px 0px;
+    }
+
+    .header_top .nav{
+        padding: 0px;
+    }
+    .header_area .navbar .nav .nav-item .nav-link{
+        line-height: 25px;
+        margin-right: 0px;
+        display: block;
+        border-radius: 0px;
+    }
+   
+	.header_area .navbar-collapse{
+		max-height: 340px;
+		overflow-y: scroll;
+	}
+
+	.header_area .navbar .nav .nav-item {
+		margin-right: 0px;
+	}
+	
+	.main_menu .navbar .container_inner {
+		display: block;
+  }
+  
+  .header_area .main_menu.sticky {
+    background: #141414;
+  }
+
+}
+
+
+@media(min-width: 992px) {
+    .header_area {
+        display: none;
+    }
+}
+
+.portLogo {
+    width: 100px;
+    height: 100px;
+}
+
+/*End Header --------------------------------------- Menu*/

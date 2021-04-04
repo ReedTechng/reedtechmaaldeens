@@ -777,6 +777,8 @@ a:focus,
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff !important;
+    margin: auto;
+    text-align: center;
 }
 
 .header_area .main_menu.sticky {

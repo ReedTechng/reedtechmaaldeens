@@ -1,1 +1,1 @@
-# maaldeens is a portfolio website designed by Jamaaldeen and developed by your fav dev 😉
+# maaldeens is a portfolio website designed by Jamaaldeen. Visit site @ https://jamaaldeen.com/😉
